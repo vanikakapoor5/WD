@@ -1,106 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Navigation Menu Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card</title>
+
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 20px;
+        body {
+            font-family: Arial;
+            background-color: #f7eedd;
+            margin: 0;
+            padding: 0;
         }
 
-        h1{
+        h1 {
             text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .block-menu a{
-            display: block;
-            background: #2e9ade;
+            background-color: #ff9f43;
+            padding: 15px;
             color: white;
-            padding: 12px;
-            margin-bottom: 5px;
-            text-decoration: none;
-            border-radius: 4px;
         }
 
-        .inline-menu a{
-            display: inline;
-            background: #34c759;
+        /* FLEXBOX CONTAINER */
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        /* PROFILE CARD */
+        .card {
+            width: 300px;
+            background-color: #fff4d6;
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .details p {
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        .btn {
+            background-color: #ff8e32;
             color: white;
-            padding: 7px 10px;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-right: 5px;
-        }
-
-        .inline-block-menu a{
-            display: inline-block;
-            background: #9b59b6;
-            color: white;
-            padding: 10px 18px;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-right: 10px;
-        }
-
-        .float-menu a{
-            float: left;
-            background: #f39c12;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-        }
-
-        .clear{
-            clear: both;
+            padding: 8px 15px;
+            border: none;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
     </style>
 </head>
-
 <body>
 
-<h1>Navigation Menu Demo</h1>
+<h1>Student Profile Card</h1>
 
-<h2>Block Example</h2>
-<div class="block-menu">
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+<div class="profile-container">
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="Student Photo">
+
+        <div class="details">
+            <p><strong>Name:</strong> Vanika Kapoor</p>
+            <p><strong>Course:</strong> B.Tech ECE</p>
+            <p><strong>Year:</strong> 1st Year</p>
+            <p><strong>Email:</strong> vanikakapoor555@gmail.com</p>
+        </div>
+
+        <button class="btn">View More</button>
+    </div>
+
 </div>
-
-<!-- INLINE EXAMPLE -->
-<h2>Inline Example</h2>
-<div class="inline-menu">
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-</div>
-
-<!-- INLINE-BLOCK EXAMPLE -->
-<h2>Inline-Block Example</h2>
-<div class="inline-block-menu">
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-</div>
-
-<!-- FLOAT EXAMPLE -->
-<h2>Float Example</h2>
-<div class="float-menu">
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-</div>
-
-<div class="clear"></div>
 
 </body>
 </html>
